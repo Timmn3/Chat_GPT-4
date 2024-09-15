@@ -1,0 +1,101 @@
+available_text_models: ["gpt-3.5-turbo", "gpt-3.5-turbo-16k", "gpt-4-1106-preview", "gpt-4-vision-preview", "gpt-4", "text-davinci-003", "gpt-4o"]
+
+info:
+  gpt-3.5-turbo:
+    type: chat_completion
+    name: ChatGPT
+    description: ChatGPT — та самая известная модель. Это <b>быстро</b> и <b>дешево</b>. Идеально подходит для повседневных задач. Если есть некоторые задачи, которые он не может выполнить, попробуйте <b>GPT-4</b>.
+
+    price_per_1000_input_tokens: 0.0015
+    price_per_1000_output_tokens: 0.002
+
+    scores:
+      умный: 3
+      быстрый: 5
+      дешевый: 5
+
+  gpt-3.5-turbo-16k:
+    type: chat_completion
+    name: GPT-16K
+    description: ChatGPT — та самая известная модель. Это <b>быстро</b> и <b>дешево</b>. Идеально подходит для повседневных задач. Если есть некоторые задачи, которые он не может выполнить, попробуйте <b>GPT-4</b>.
+
+    price_per_1000_input_tokens: 0.003
+    price_per_1000_output_tokens: 0.004
+
+    scores:
+      умный: 3
+      быстрый: 5
+      дешевый: 5
+
+  gpt-4:
+    type: chat_completion
+    name: GPT-4
+    description: GPT-4 — <b>самая умная</b> и самая совершенная модель в мире. Но он медленнее и не так экономичен, как ChatGPT. Лучший выбор для <b>сложных</b> интеллектуальных задач.
+
+    price_per_1000_input_tokens: 0.03
+    price_per_1000_output_tokens: 0.06
+
+    scores:
+      умный: 5
+      быстрый: 2
+      дешевый: 2
+
+  gpt-4-1106-preview:
+    type: chat_completion
+    name: GPT-4 Turbo
+    description: GPT-4 Turbo — это <b>более быстрая</b> и <b>дешевая</b> версия GPT-4. Он такой же умный, как GPT-4, поэтому вам следует использовать его вместо GPT-4.
+
+    price_per_1000_input_tokens: 0.01
+    price_per_1000_output_tokens: 0.03
+
+    scores:
+      умный: 5
+      быстрый: 4
+      дешевый: 3
+
+  gpt-4-vision-preview:
+    type: chat_completion
+    name: GPT-4 Vision
+    description: Возможность <be>понимать изображения</b> в дополнение ко всем другим возможностям GPT-4 Turbo.
+
+    price_per_1000_input_tokens: 0.01
+    price_per_1000_output_tokens: 0.03
+
+    scores:
+      умный: 5
+      быстрый: 4
+      дешевый: 3
+
+  gpt-4o:
+    type: chat_completion
+    name: GPT-4o
+    description: GPT-4o — это специальный вариант GPT-4, разработанный для обеспечения оптимальной производительности и точности. Подходит для сложных и детальных задач.
+
+    price_per_1000_input_tokens: 0.03
+    price_per_1000_output_tokens: 0.06
+
+    scores:
+      умный: 5
+      быстрый: 2
+      дешевый: 2
+
+  text-davinci-003:
+    type: completion
+    name: GPT-3.5
+    description: GPT-3.5 — устаревшая модель. На самом деле <b>нет причин использовать его</b>, поскольку он дороже и медленнее, чем ChatGPT, но примерно такой же умный.
+
+    price_per_1000_input_tokens: 0.02
+    price_per_1000_output_tokens: 0.02
+
+    scores:
+      умный: 3
+      быстрый: 2
+      дешевый: 3
+
+  dalle-2:
+     type: image
+     price_per_1_image: 0.018  # 512x512
+
+  whisper:
+    type: audio
+    price_per_1_min: 0.006
